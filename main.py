@@ -51,6 +51,10 @@ def tops():
 def par():
   return render_template("par.html")
 
+@app.route('/noteikumi')
+def noteikumi():
+  return render_template("noteikumi.html")
+
 @app.route('/api', methods=['GET', 'POST'])  # what to return at base
 @cross_origin(origin='*')
 def api():
