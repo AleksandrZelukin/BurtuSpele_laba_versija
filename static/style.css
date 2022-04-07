@@ -1,0 +1,49 @@
+table {
+  margin-top: 10px;
+}
+td {
+  border: 1px solid black;
+  padding: 7px;
+}
+
+body {
+  background: rgb(252, 252, 252);
+  font-size: 20px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+  color: rgb(0, 0, 10);
+}
+
+h3 {
+  font-size: 20px;
+  color: rgb(0, 0, 10);
+}
+#burti {
+  font-size: 48px;
+  color: #1e00ff;
+  font-weight: bold;
+}
+.vards {
+  font-size: 28px;
+}
+.pareizi {
+  background: rgb(182, 236, 157);
+}
+.nepareizi {
+  background: rgb(235, 77, 71);
+}
+#laiks {
+  padding: 5px;
+  background: white;
+}
+#punkti {
+  padding: 5px;
+  background: white;
+}
+li {
+  font-size: 28px;
+}
