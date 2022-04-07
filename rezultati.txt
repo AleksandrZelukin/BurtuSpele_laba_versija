@@ -1,1 +1,1 @@
-[{"punkti": 25, "vards": "Aleksandrs"}, {"punkti": 8, "vards": "Aleksandrs"}]
+[{"punkti": 25, "vards": "Aleksandr"}, {"punkti": 8, "vards": "Olga"}, {"punkti": 5, "vards": "Biruta"}, {"punkti": 82, "vards": "Valdis"}, {"punkti": 27, "vards": "Beāte"}]

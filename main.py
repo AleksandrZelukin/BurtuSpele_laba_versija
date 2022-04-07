@@ -67,11 +67,11 @@ def api():
 
 
 app.run(host='0.0.0.0', port=8020)
-#http serv start
+# http serv start
 
 
-f = open("rezultati.txt","a+")
-f.write("Pēteris, 55\n")
-f.close()
+# f = open("rezultati.txt","a+")
+# f.write("Pēteris, 55\n")
+# f.close()
 
 
