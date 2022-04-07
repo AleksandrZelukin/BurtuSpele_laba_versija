@@ -47,9 +47,9 @@ def spele():
 def tops():
   return render_template("tops.html")
 
-@app.route('/admin')
-def admin():
-  return render_template("admin.html")
+@app.route('/par')
+def par():
+  return render_template("par.html")
 
 @app.route('/api', methods=['GET', 'POST'])  # what to return at base
 @cross_origin(origin='*')
