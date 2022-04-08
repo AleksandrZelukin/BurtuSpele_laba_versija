@@ -13,11 +13,13 @@ SQL.execute("""CREATE TABLE IF NOT EXISTS rezultati (
               PRIMARY KEY("id" AUTOINCREMENT)
            )""")
 
-with open(JSON, 'r', encoding="UTF-8") as f:
+
+with open('top.json', 'r', encoding="UTF-8") as f:
   dati = f.read()
   datiJson = json.loads(dati)
 
   for dati in datiJson:
+    
     SQL.execute("INSERT INTO rezultati (vards, punkti) VALUES (:vards, :punkti)", {'vards': dati['vards'], 'punkti': dati['punkti']})
 
 

@@ -7,6 +7,7 @@ def top():
   DB = sqlite3.connect('top.db')
   
   SQL = DB.cursor()
+  
   SQL.execute("SELECT * FROM rezultati ORDER BY punkti DESC")
   rezultati = SQL.fetchall()
   print(rezultati)
@@ -17,16 +18,17 @@ def top():
       "vards":rez[1],
       "punkti":rez[2]
     })
+  
   DB.close()
   return dati
 
 def pievienot(dati):
   DB = sqlite3.connect('top.db')
   SQL = DB.cursor()
-  
   SQL.execute("INSERT INTO rezultati (vards, punkti) VALUES (:vards, :punkti)", {'vards': dati['vards'], 'punkti': dati['punkti']})
   DB.commit()
   DB.close()
+
 
 
 # print(__name__)
