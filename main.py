@@ -1,5 +1,5 @@
 from flask import Flask, json, request, render_template
-from flask_cors import CORS, cross_origin
+# from flask_cors import CORS, cross_origin
 import sqlite3
 
 def top():
@@ -35,7 +35,7 @@ def pievienot(dati):
 app = Flask(__name__)
 #app.debug = True
 
-CORS(app)  # enable crossdomain access
+# CORS(app)  # enable crossdomain access
 
 @app.route('/')
 def index():
@@ -58,7 +58,7 @@ def noteikumi():
   return render_template("noteikumi.html")
 
 @app.route('/api', methods=['GET', 'POST'])  # what to return at base
-@cross_origin(origin='*')
+# @cross_origin(origin='*')
 def api():
     if (request.method == 'GET'):
         return json.dumps(top())
@@ -68,7 +68,7 @@ def api():
         return json.dumps(top())
 
 
-app.run(host='0.0.0.0', port=8020)
+app.run(host='127.0.0.1', port=8080)
 # http serv start
 
 
